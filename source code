@@ -1,0 +1,32 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int i = get_int("Input: ");
+    if (i < 4)
+    {
+        for (int j = 0; j < i; j ++)
+        {
+            printf("I");
+        }
+        printf("\n");
+    }
+    else if(i == 4)
+    {
+        printf("IV\n");
+    }
+    else if(i < 9)
+    {
+        for(int k = 0; k < 1; k++)
+        {
+            printf("V");
+            for (int l = 5; l < i; l++)
+            {
+                printf("I");
+            }
+            printf("\n");
+        }
+    }
+}
